@@ -1,0 +1,372 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End CSS reset*/
+
+:root{
+    --my-black: #1f2927;
+    --my-paradiso: #125961;
+    --my-paradiso-dark: #0f3f44;
+    --my-orange: #ba710f;
+    --my-yellow: #eccc5d;
+    --my-white: #f8efc4;
+    --my-gray-bg: rgb(226, 219, 219);
+    background: var(--my-gray-bg);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header{
+    background: var(--my-black);
+    padding: 0;
+    width: 100%;
+    height: 12rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0rem 0.5rem 0.2rem rgb(0,0,0,0.25);
+}
+#header .header-container{
+    position: relative;
+    top: 0;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+#header .header-top>.header-top-info{
+    position: absolute;
+    top: 2rem;
+    left: 14rem;
+    max-width: 57rem;
+    margin: 2rem auto 1rem;
+    
+}
+#header .header-top>.header-top-info h1{
+    width: max-content;
+    color: var(--my-white);
+    font-family: cambria;
+    font-size: 2rem;
+    font-weight: 10;
+    text-transform: uppercase;
+}
+#header .header-top>.header-top-info h2{
+    width: max-content;
+    color: var(--my-yellow);
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+#header .header-top>#photo-leonardo{
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    width: 8rem;
+    border-radius: 5rem;
+}
+#header .header-top>#photo-leonardo:hover{
+    top: 1rem;
+    width: 10rem;
+    border-radius: 12rem;
+    transition: 0.5s;
+}
+#header .header-top>#photo-leonardo:hover ~ .header-top-info h1{
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+#header .header-top>#photo-leonardo:hover ~ .header-top-info h2{
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+#header #nav-bar{
+    position: absolute;
+    top: 6rem;
+    left: 13rem;
+    max-width: 57rem;
+    margin: 2rem auto 2rem;
+}
+#header #nav-bar #nav-bar-menu{
+    position: absolute;
+    background: #0000;
+    border: #0000;
+    display: none;
+    
+}
+#header #nav-bar #nav-bar-menu img{
+    width: 2rem;
+}
+#header #nav-bar>.nav-bar-item{
+    background: var(--my-paradiso);
+    color: var(--my-white);
+    display: inline-block;
+    size: 1.25rem;
+    margin: 0.25rem 0.5rem;
+    padding: 0.25rem 1.8rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+}
+#header #nav-bar>.nav-bar-item:hover{
+    background: var(--my-paradiso-dark);
+    color: var(--my-orange);
+    transition: 0.3s;
+}
+
+main{
+    margin-top: 14rem;
+}
+
+.section{
+    max-width: 900px;
+    height: auto;
+    background: var(--my-paradiso);
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color: var(--my-white);
+    box-shadow: 1rem 1rem 0.5rem rgb(0,0,0,0.25);
+}
+
+.section>.section-tittle{
+    color: var(--my-yellow);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px var(--my-orange) solid;
+    text-transform: uppercase;
+}
+.section>.section-profile{
+    font-size: 1.25rem;
+    font-family: montserrat;
+    text-align: justify;
+    font-weight: lighter;
+}
+.section .study-work{
+    margin-bottom: 0.75rem;
+}
+.section .study-work>.swtittle{
+    text-transform: uppercase;
+    font-family: monserrat;
+    font-size: 1.5rem;
+    color: var(--my-yellow);
+    font-weight: bolder;
+}
+.section .study-work>.swplace{
+    text-transform: uppercase;
+    font-family: monserrat;
+    font-weight: lighter;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.section .study-work>.dates{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.section .study-work .job-description{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+}
+.gotop{
+    display: inline-block;
+    color: var(--my-black);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+.gotop:hover{
+    color: var(--my-orange);
+    font-weight: bolder;
+    transition: 0.3s;
+}
+#skills .skills-list .skills-list-container{
+    position: relative;
+    z-index: 1;
+}
+#skills .skills-list .skills-list-container .skills-list-container-item{
+    display: block;
+    min-width: 300px;
+    max-width: 35%;
+    font-family: montserrat;
+    font-size: 1.125rem;
+    padding: 0.75rem 0.5rem;
+    border: 0.1rem var(--my-black) solid;
+    border-radius: 0.5rem;
+}
+#skills .skills-list .skills-list-container .skills-list-container-item>p{
+    display: inline-block;
+}
+#skills .skills-list .skills-list-container .skills-list-container-item>span{
+    float: right;
+}
+#skills .skills-list .skills-list-container .skills-list-container-item .arrow2{
+    display: none;
+}
+#skills .skills-list ul li~li{
+    margin-top: 0.25rem;
+}
+#skills .skills-list .skills-list-container .skill-list-item-description{
+    max-width: 60%;
+    min-width: 400px;
+    position: absolute;
+    top: 0rem;
+    left: 40%;
+    display: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+#skills .skills-list .skills-list-container .skills-list-container-item:hover ~ .skill-list-item-description{
+    display: block;
+    background: var(--my-paradiso);
+}
+#contact .contact-form form{
+    text-align: center;
+}
+#contact .contact-form form label[for]{
+    font-family: montserat;
+    display: inline-block;
+    width: 10%;
+    margin-bottom: 1rem;
+}
+#contact .contact-form form input[id], textarea{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    width: 80%;
+}
+#contact .contact-form form .button-center{
+    text-align: center;
+}
+#contact .contact-form form .button-center button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bolder;
+    width: 8rem;
+    height: 2rem;
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+@media (max-width: 1200px){
+    #header #nav-bar #nav-bar-menu{
+        display: inline-block;
+    }
+    #header #nav-bar>.nav-bar-item{
+        margin: 0rem;
+        padding: 0.5rem 2.25rem;
+        border-radius: 0;
+        text-align: left;
+        display: none;
+        top: 2rem;
+        left: 2rem;
+        font-size: 1.25rem;
+    }
+    #header #nav-bar:hover .nav-bar-item{
+        display: flex;
+    }
+
+    #header #nav-bar #nav-bar-menu:hover ~ .nav-bar-item{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 991px){
+    .section{
+        max-width: 90%;
+    }
+    .section .section-tittle{
+        font-size: 1.25rem;
+    }
+    .section>.section-profile{
+        font-size: 1rem;
+    }
+    .section .study-work>.swtittle{
+        font-size: 1.25rem;
+    }
+    .section .study-work>.swplace{
+        font-size: 1rem;
+    }
+    .section .study-work>.dates{
+        font-size: 0.75rem;
+    }
+    .section .study-work .job-description{
+        font-size: 1rem;
+    }
+    #skills .skills-list .skills-list-container .skills-list-container-item{
+        font-size: 1.rem;
+    }
+}
+
+@media (max-width: 650px){
+    #skills .skills-list .skills-list-container .skills-list-container-item{
+        display: block;
+        max-width: 100%;
+    }
+    #skills .skills-list .skills-list-container .skill-list-item-description{
+        max-width: 100%;
+        position: absolute;
+        top: 3rem;
+        left: 0rem;
+        display: none;
+    }
+    #skills .skills-list .skills-list-container .skills-list-container-item:hover ~ .skill-list-item-description{
+        position: static;
+        display: block;
+        background: var(--my-paradiso);
+        padding: 0.5rem;
+    }
+    #skills .skills-list .skills-list-container .skills-list-container-item:hover .arrow1{
+        display: none;
+    }
+    #skills .skills-list .skills-list-container .skills-list-container-item:hover .arrow2{
+        display: inline-block;
+    }
+}
